@@ -8,7 +8,8 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 st.write("HEART DISEASE PREDICTION USING MACHINE LEARNING!")
-image = Image.open('https://github.com/EmonKumarDas/heart.github.io/blob/main/hands_holding_animated_heart.jpg')
+image = Image.open('https://media.istockphoto.com/photos/3d-render-medical-heart-rate-icon-doctor-or-cardiologist-cartoon-hand-picture-id1303694638?k=20&m=1303694638&s=612x612&w=0&h=PAwph0igLyAl2JeX4Z2Rr5bejgETUL2Zks-u1b_xpl8=')
+
 st.image(image,caption='ML',use_column_width=True)
 
 df = pd.read_csv('E:/python/heart_disease/Cleveland, Hungary, Switzerland, and Long Beach (1).csv')
