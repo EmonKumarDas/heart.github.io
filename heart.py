@@ -12,7 +12,7 @@ image = Image.open('hands_holding_animated_heart.jpg')
 
 st.image(image,caption='ML',use_column_width=True)
 
-df = pd.read_csv('E:/python/heart_disease/Cleveland, Hungary, Switzerland, and Long Beach (1).csv')
+df = pd.read_csv('Cleveland, Hungary, Switzerland, and Long Beach (1).csv')
 st.subheader('Data Information:')
 st.dataframe(df)
 st.write(df.describe())
