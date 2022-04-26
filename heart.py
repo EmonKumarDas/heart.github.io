@@ -13,17 +13,13 @@ image = Image.open('hands_holding_animated_heart.jpg')
 st.image(image,caption='ML',use_column_width=True)
 
 df = pd.read_csv('Cleveland, Hungary, Switzerland, and Long Beach (1).csv')
-st.subheader('Data Information:')
-st.dataframe(df)
-st.write(df.describe())
-barchart = st.bar_chart(df)
 x= df.iloc[:,:-1] 
 y = df.iloc[:,13]
 x_train,x_test,y_train,y_test =train_test_split(x,y,random_state=42, test_size=0.3,shuffle=True)
 # sex,cp,trestbps,chol,fbs,restecg,
 # thalach,exang,oldpeak,slope,ca,thal,target
 def get_user_input():
-    age = st.text_input('Age:-')
+    age = st.slider('Age:-',0,130)
     sex = st.slider('Sex:-',0,1)
     cp = st.slider('Cp:-',0,3)
     trestbps = st.slider('Trestbps:-',0,190)
