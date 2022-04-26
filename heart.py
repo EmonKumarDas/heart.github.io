@@ -19,7 +19,7 @@ x_train,x_test,y_train,y_test =train_test_split(x,y,random_state=42, test_size=0
 # sex,cp,trestbps,chol,fbs,restecg,
 # thalach,exang,oldpeak,slope,ca,thal,target
 def get_user_input():
-    age = st.slider('Age:-',23,130)
+    age = st.slider('Age:-',20,130)
     sex = st.slider('Sex:-',1,0)
     cp = st.slider('Cp:-',0,3)
     trestbps = st.slider('Trestbps:-',0,190)
