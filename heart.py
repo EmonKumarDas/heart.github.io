@@ -58,10 +58,6 @@ from sklearn.tree import DecisionTreeClassifier
 dt = DecisionTreeClassifier(criterion='entropy',random_state=142,splitter='random',max_features='auto')
 dt.fit(x_train,y_train)
 
-st.subheader('MODEL TEST ACCURACY SCORE FOR DECISION TREE:-')
-
-st.write(str(accuracy_score(y_test,dt.predict(x_test)) * 100)+'%')
-
 predict = dt.predict(user_input)
 
 st.subheader('Classification:')
