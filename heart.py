@@ -12,7 +12,7 @@ image = Image.open('hands_holding_animated_heart.jpg')
 
 st.image(image,caption='ML',use_column_width=True)
 
-df = pd.read_csv('Cleveland, Hungary, Switzerland, and Long Beach (1).csv')
+df = pd.read_csv('Cleveland, Hungary, Switzerland, and Long Beach.csv')
 x= df.iloc[:,:-1] 
 y = df.iloc[:,13]
 x_train,x_test,y_train,y_test =train_test_split(x,y,random_state=42, test_size=0.3,shuffle=True)
